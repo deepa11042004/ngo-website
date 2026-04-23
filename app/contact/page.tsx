@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | HopeSpring Foundation",
+  title: "Contact | Second Light Foundation",
 };
 
 export default function ContactPage() {
@@ -57,9 +57,9 @@ export default function ContactPage() {
         <aside className="rounded-3xl bg-slate-900 p-8 text-slate-100">
           <h2 className="text-2xl font-bold">Contact Details</h2>
           <ul className="mt-5 space-y-3 text-sm text-slate-200">
-            <li>Email: hello@hopespring.org</li>
+            <li>Email: hello@secondlightfoundation.org</li>
             <li>Phone: +91 80 4123 4567</li>
-            <li>Address: 12 Community Lane, Bengaluru, India</li>
+            <li>Address: 12 Community Lane, New Delhi, India</li>
             <li>Office Hours: Mon-Fri, 9:30 AM - 6:00 PM</li>
           </ul>
         </aside>

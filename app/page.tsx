@@ -22,9 +22,9 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-wide text-green-700">Who We Are</p>
             <h2 className="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Compassion with accountability</h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              HopeSpring Foundation works shoulder-to-shoulder with underserved communities to
-              create long-term change. Our values are rooted in transparency, empowerment, and
-              sustainability so families can move from survival to dignity.
+              Second Light Foundation works shoulder-to-shoulder with underserved communities in
+              Delhi and beyond to create long-term change. Our values are rooted in transparency,
+              empowerment, and sustainability so families can move from survival to dignity.
             </p>
             <Link
               href="/about"

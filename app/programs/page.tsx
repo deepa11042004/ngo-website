@@ -3,7 +3,7 @@ import ProgramCard from "@/components/ProgramCard";
 import { programs } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Programs | HopeSpring Foundation",
+  title: "Programs | Second Light Foundation",
 };
 
 export default function ProgramsPage() {

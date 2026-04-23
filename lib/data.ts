@@ -54,9 +54,9 @@ export const programs: Program[] = [
 ];
 
 export const impactStats: ImpactStat[] = [
-  { label: "Lives Impacted", value: 100000, suffix: "+", icon: "heart" },
-  { label: "Villages Reached", value: 500, suffix: "+", icon: "map" },
-  { label: "Children Educated", value: 10000, suffix: "+", icon: "book" },
+  { label: "Lives Impacted", value: 1000, suffix: "", icon: "heart" },
+  { label: "Villages Reached", value: 50, suffix: "", icon: "map" },
+  { label: "Children Educated", value: 100, suffix: "", icon: "book" },
 ];
 
 export const stories: Story[] = [
@@ -73,7 +73,7 @@ export const stories: Story[] = [
     name: "Ravi",
     location: "Maharashtra",
     image:
-      "https://images.unsplash.com/photo-1469571486292-b53601020f90?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80",
     snippet:
       "With regular nutrition and health checkups, Ravi recovered and returned to class with confidence.",
     href: "/about#stories",

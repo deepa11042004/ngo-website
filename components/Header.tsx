@@ -19,11 +19,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2" aria-label="HopeSpring Foundation Home">
+        <Link href="/" className="flex items-center gap-2" aria-label="Second Light Foundation Home">
           <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
-            HS
+            SL
           </span>
-          <span className="text-lg font-semibold text-slate-900">HopeSpring Foundation</span>
+          <span className="text-lg font-semibold text-slate-900">Second Light Foundation</span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">

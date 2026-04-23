@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About | HopeSpring Foundation",
+  title: "About | Second Light Foundation",
 };
 
 export default function AboutPage() {
@@ -13,9 +13,10 @@ export default function AboutPage() {
           <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">About Us</p>
           <h1 className="mt-3 text-4xl font-bold text-slate-900">Building hope through people-first change</h1>
           <p className="mt-5 text-base leading-8 text-slate-600">
-            Since 2012, HopeSpring Foundation has partnered with communities, local leaders, and
+            Since 2012, Second Light Foundation has partnered with communities, local leaders, and
             institutions to improve access to education, preventive healthcare, and dignified
-            livelihoods. We design every intervention with community ownership and measurable goals.
+            livelihoods. Our work is inspired by the values of justice, compassion, and public
+            accountability exemplified by Hazrat Umar (RA).
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             <div className="rounded-xl bg-white p-4 shadow-sm">

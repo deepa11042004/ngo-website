@@ -16,9 +16,9 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "HopeSpring Foundation | Together, We Can Change Lives",
+  title: "Second Light Foundation | Together, We Can Change Lives",
   description:
-    "A trust-driven NGO platform focused on education, health, and community empowerment across India.",
+    "A trust-driven NGO platform inspired by the values of justice and compassion exemplified by Hazrat Umar (RA), focused on education, health, and community empowerment across India.",
 };
 
 export default function RootLayout({

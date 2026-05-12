@@ -35,8 +35,8 @@ export default function AboutPage() {
         </div>
         <div className="relative h-[420px] overflow-hidden rounded-3xl">
           <Image
-            src="https://images.unsplash.com/photo-1542816417-0983670d88e2?auto=format&fit=crop&w=1400&q=80"
-            alt="Community workers with children"
+            src="/about-india-community.jpg"
+            alt="Indian community children participating in an activity"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

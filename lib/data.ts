@@ -32,7 +32,7 @@ export const programs: Program[] = [
     description:
       "Learning centers and scholarships helping children stay in school and dream bigger.",
     image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1524069290683-0457abfe42c3?auto=format&fit=crop&w=1200&q=80",
     href: "/programs#education",
   },
   {
@@ -40,7 +40,7 @@ export const programs: Program[] = [
     description:
       "Mobile clinics and health camps delivering early care to rural families.",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80",
     href: "/programs#health",
   },
   {
@@ -48,7 +48,7 @@ export const programs: Program[] = [
     description:
       "Skill training and self-help groups enabling women to build independent livelihoods.",
     image:
-      "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1617450365226-9bf28c04e130?auto=format&fit=crop&w=1200&q=80",
     href: "/programs#women",
   },
 ];

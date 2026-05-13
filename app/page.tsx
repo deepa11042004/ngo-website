@@ -13,36 +13,34 @@ export default function Home() {
   const helpIcons = [HandCoins, HandHeart, Handshake];
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-white via-amber-50/20 to-white">
       <Hero />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-10 rounded-3xl bg-white p-8 shadow-sm lg:grid-cols-2">
+        <div className="grid items-center gap-10 rounded-3xl bg-white p-8 shadow-md border border-amber-100/50 lg:grid-cols-2 hover:shadow-lg transition-shadow">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-green-700">Who We Are</p>
-            <h2 className="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Compassion with accountability</h2>
+            <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">Who We Are</p>
+            <h2 className="mt-3 text-3xl font-bold text-slate-900 sm:text-4xl">Compassion with <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Accountability</span></h2>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              Second Light Foundation works shoulder-to-shoulder with underserved communities in
-              Delhi and beyond to create long-term change. Our values are rooted in transparency,
-              empowerment, and sustainability so families can move from survival to dignity.
+              Second Light Foundation works shoulder-to-shoulder with underserved communities across India to create long-term change. Our values are rooted in transparency, empowerment, and sustainability—so families can move from survival to dignity.
             </p>
             <Link
               href="/about"
-              className="mt-6 inline-flex rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700"
+              className="mt-6 inline-flex rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-6 py-2.5 text-sm font-semibold text-white hover:shadow-lg transition"
             >
-              Read More
+              Learn Our Story
             </Link>
           </div>
-          <div className="rounded-2xl bg-gradient-to-br from-blue-100 via-white to-orange-100 p-8">
+          <div className="rounded-2xl bg-gradient-to-br from-orange-100 via-white to-red-50 p-8 border border-orange-200/50">
             <ul className="space-y-4 text-sm text-slate-700">
-              <li className="rounded-xl bg-white/90 p-4 shadow-sm">
-                92% of donations directly support program delivery and community-led initiatives.
+              <li className="rounded-xl bg-white/90 p-4 shadow-sm border border-orange-100/50">
+                ✓ 92% of donations directly support program delivery and community initiatives.
               </li>
-              <li className="rounded-xl bg-white/90 p-4 shadow-sm">
-                Audited financial reports published annually for complete donor transparency.
+              <li className="rounded-xl bg-white/90 p-4 shadow-sm border border-orange-100/50">
+                ✓ Audited financial reports published annually for complete transparency.
               </li>
-              <li className="rounded-xl bg-white/90 p-4 shadow-sm">
-                Local teams in 8 states ensuring culturally grounded and sustainable interventions.
+              <li className="rounded-xl bg-white/90 p-4 shadow-sm border border-orange-100/50">
+                ✓ Local teams in 27 states ensuring culturally grounded, sustainable interventions.
               </li>
             </ul>
           </div>
@@ -52,11 +50,11 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">Programs</p>
-            <h2 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Where your support creates change</h2>
+            <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">Our Work</p>
+            <h2 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Where your support creates <span className="text-orange-600">change</span></h2>
           </div>
-          <Link href="/programs" className="hidden text-sm font-semibold text-blue-700 hover:text-blue-800 sm:block">
-            View all programs
+          <Link href="/programs" className="hidden text-sm font-semibold text-orange-700 hover:text-orange-800 sm:block">
+            View all programs →
           </Link>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
@@ -72,8 +70,8 @@ export default function Home() {
 
       <section id="stories" className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-green-700">Stories of Change</p>
-          <h2 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Real journeys, real outcomes</h2>
+          <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">Stories of Change</p>
+          <h2 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Real journeys, real <span className="text-orange-600">outcomes</span></h2>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {stories.map((story) => (
@@ -88,22 +86,24 @@ export default function Home() {
 
       <section id="help" className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="mb-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">How To Help</p>
-          <h2 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Choose your way to make a difference</h2>
+          <p className="text-sm font-semibold uppercase tracking-wide text-orange-700">How To Help</p>
+          <h2 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Choose your way to make a <span className="text-orange-600">difference</span></h2>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {helpOptions.map((option, index) => {
             const Icon = helpIcons[index];
             return (
-              <article key={option.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <Icon className="h-8 w-8 text-orange-500" aria-hidden="true" />
+              <article key={option.title} className="rounded-2xl border border-amber-100/50 bg-white p-6 shadow-md hover:shadow-lg hover:border-orange-200 transition-all">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-orange-100">
+                  <Icon className="h-6 w-6 text-orange-600" aria-hidden="true" />
+                </div>
                 <h3 className="mt-4 text-xl font-semibold text-slate-900">{option.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{option.description}</p>
                 <Link
                   href={option.href}
-                  className="mt-5 inline-flex rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800"
+                  className="mt-5 inline-flex rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-4 py-2 text-sm font-semibold text-white hover:shadow-lg transition"
                 >
-                  Take Action
+                  Take Action →
                 </Link>
               </article>
             );

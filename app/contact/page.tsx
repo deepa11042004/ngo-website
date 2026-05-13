@@ -59,7 +59,7 @@ export default function ContactPage() {
           <ul className="mt-5 space-y-3 text-sm text-slate-200">
             <li>Email: hello@secondlightfoundation.org</li>
             <li>Phone: +91 80 4123 4567</li>
-            <li>Address: 12 Community Lane, New Delhi, India</li>
+            <li>Address: C-32, Block C, Sector 14, Kaushambi, Ghaziabad, Uttar Pradesh 201010</li>
             <li>Office Hours: Mon-Fri, 9:30 AM - 6:00 PM</li>
           </ul>
         </aside>

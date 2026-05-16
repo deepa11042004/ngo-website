@@ -13,16 +13,16 @@ const fadeInUp = {
 
 export default function HealthcarePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-green-50/20 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-white via-orange-50/20 to-white">
       {/* Hero Section with Image */}
       <section className="relative h-96 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-700">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-amber-700">
           <img
             src="https://images.unsplash.com/photo-1587854692152-cbe660dbde0f?auto=format&fit=crop&w=1200&q=80"
             alt="Healthcare worker with Indian patient"
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-emerald-700/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/80 to-amber-700/60"></div>
         </div>
         
         <motion.div
@@ -31,13 +31,13 @@ export default function HealthcarePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-block rounded-full bg-green-100/20 px-4 py-2 text-green-100 mb-4 border border-green-200/50">
+          <div className="inline-block rounded-full bg-orange-100/20 px-4 py-2 text-orange-100 mb-4 border border-orange-200/50">
             ⚕️ Our Healthcare Initiative
           </div>
           <h1 className="text-5xl font-bold mb-4 max-w-3xl">
             Healthcare Access for All
           </h1>
-          <p className="text-xl text-green-100 max-w-2xl">
+          <p className="text-xl text-orange-100 max-w-2xl">
             Bringing quality healthcare services to India's remote and underserved communities
           </p>
         </motion.div>
@@ -54,13 +54,13 @@ export default function HealthcarePage() {
           ].map((stat, i) => (
             <motion.div
               key={i}
-              className="bg-white rounded-lg p-6 shadow-md border border-green-100 text-center"
+              className="bg-white rounded-lg p-6 shadow-md border border-orange-100 text-center"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.1 }}
             >
               <div className="text-4xl mb-2">{stat.icon}</div>
-              <div className="text-3xl font-bold text-green-600 mb-2">{stat.value}</div>
+              <div className="text-3xl font-bold text-orange-600 mb-2">{stat.value}</div>
               <p className="text-slate-600 text-sm font-medium">{stat.label}</p>
             </motion.div>
           ))}
@@ -81,12 +81,12 @@ export default function HealthcarePage() {
               alt="Healthcare in rural India"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-green-900/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-orange-900/40 to-transparent"></div>
           </motion.div>
 
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
-              Quality Healthcare for <span className="text-green-600">Every Community</span>
+              Quality Healthcare for <span className="text-orange-600">Every Community</span>
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed mb-4">
               Healthcare is a fundamental right, yet millions in rural and urban slums lack access to basic medical services. Our Healthcare Program brings preventive care, treatment, and awareness to communities that need it most.
@@ -103,7 +103,7 @@ export default function HealthcarePage() {
                 "Maternal & child health focus",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="text-green-600 font-bold text-xl mt-1">✓</span>
+                  <span className="text-orange-600 font-bold text-xl mt-1">✓</span>
                   <span className="text-slate-700">{item}</span>
                 </div>
               ))}
@@ -113,7 +113,7 @@ export default function HealthcarePage() {
       </section>
 
       {/* Service Areas */}
-      <section className="bg-green-50 border-y border-green-200/50 py-16">
+      <section className="bg-orange-50 border-y border-orange-200/50 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.h2 className="text-3xl font-bold text-slate-900 mb-12 text-center" {...fadeInUp}>
             Our Healthcare Services
@@ -143,7 +143,7 @@ export default function HealthcarePage() {
             ].map((item, i) => (
               <motion.div
                 key={i}
-                className="bg-white rounded-lg p-6 shadow-md border border-green-100 hover:shadow-lg transition-all"
+                className="bg-white rounded-lg p-6 shadow-md border border-orange-100 hover:shadow-lg transition-all"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
@@ -182,7 +182,7 @@ export default function HealthcarePage() {
           ].map((story, i) => (
             <motion.div
               key={i}
-              className="bg-white rounded-xl p-6 shadow-md border border-green-100 hover:shadow-lg transition-all"
+              className="bg-white rounded-xl p-6 shadow-md border border-orange-100 hover:shadow-lg transition-all"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.15 }}
@@ -196,15 +196,15 @@ export default function HealthcarePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-700 py-16 text-white">
+      <section className="bg-gradient-to-r from-orange-600 to-amber-700 py-16 text-white">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <motion.div {...fadeInUp}>
             <h2 className="text-3xl font-bold mb-4">Support Healthcare for All</h2>
-            <p className="text-lg mb-8 text-green-100">
+            <p className="text-lg mb-8 text-orange-100">
               Help us reach more communities with quality healthcare services
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/donate" className="rounded-full bg-white px-8 py-3 font-semibold text-green-600 hover:bg-green-50 transition">
+              <a href="/donate" className="rounded-full bg-white px-8 py-3 font-semibold text-orange-600 hover:bg-orange-50 transition">
                 Donate Now
               </a>
               <a href="/get-involved/corporate" className="rounded-full border-2 border-white px-8 py-3 font-semibold text-white hover:bg-white/10 transition">

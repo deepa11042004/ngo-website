@@ -13,16 +13,16 @@ const fadeInUp = {
 
 export default function WomenEmpowermentPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-pink-50/20 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-white via-orange-50/20 to-white">
       {/* Hero Section with Image */}
       <section className="relative h-96 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-rose-700">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-amber-700">
           <img
             src="https://images.unsplash.com/photo-1540575467063-178f50002cbc?auto=format&fit=crop&w=1200&q=80"
             alt="Indian women in self-help group"
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-600/80 to-rose-700/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/80 to-amber-700/60"></div>
         </div>
         
         <motion.div
@@ -31,13 +31,13 @@ export default function WomenEmpowermentPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-block rounded-full bg-pink-100/20 px-4 py-2 text-pink-100 mb-4 border border-pink-200/50">
+          <div className="inline-block rounded-full bg-orange-100/20 px-4 py-2 text-orange-100 mb-4 border border-orange-200/50">
             👩 Women Empowerment Initiative
           </div>
           <h1 className="text-5xl font-bold mb-4 max-w-3xl">
             Empowering Women, Transforming India
           </h1>
-          <p className="text-xl text-pink-100 max-w-2xl">
+          <p className="text-xl text-orange-100 max-w-2xl">
             Economic independence, leadership, and dignified lives for millions of Indian women
           </p>
         </motion.div>
@@ -54,13 +54,13 @@ export default function WomenEmpowermentPage() {
           ].map((stat, i) => (
             <motion.div
               key={i}
-              className="bg-white rounded-lg p-6 shadow-md border border-pink-100 text-center"
+              className="bg-white rounded-lg p-6 shadow-md border border-orange-100 text-center"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.1 }}
             >
               <div className="text-4xl mb-2">{stat.icon}</div>
-              <div className="text-3xl font-bold text-pink-600 mb-2">{stat.value}</div>
+              <div className="text-3xl font-bold text-orange-600 mb-2">{stat.value}</div>
               <p className="text-slate-600 text-sm font-medium">{stat.label}</p>
             </motion.div>
           ))}
@@ -72,7 +72,7 @@ export default function WomenEmpowermentPage() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
-              Creating <span className="text-pink-600">Opportunities</span> for Women
+              Creating <span className="text-orange-600">Opportunities</span> for Women
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed mb-4">
               Women are the backbone of communities. When women are empowered, entire villages are transformed. Our Women Empowerment Program focuses on economic independence, financial literacy, skill development, and leadership opportunities.
@@ -89,7 +89,7 @@ export default function WomenEmpowermentPage() {
                 "Leadership & advocacy training",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="text-pink-600 font-bold text-xl mt-1">✓</span>
+                  <span className="text-orange-600 font-bold text-xl mt-1">✓</span>
                   <span className="text-slate-700">{item}</span>
                 </div>
               ))}
@@ -107,13 +107,13 @@ export default function WomenEmpowermentPage() {
               alt="Women group activity"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-pink-900/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-orange-900/40 to-transparent"></div>
           </motion.div>
         </div>
       </section>
 
       {/* Program Focus */}
-      <section className="bg-pink-50 border-y border-pink-200/50 py-16">
+      <section className="bg-orange-50 border-y border-orange-200/50 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.h2 className="text-3xl font-bold text-slate-900 mb-12 text-center" {...fadeInUp}>
             Our Focus Areas
@@ -143,7 +143,7 @@ export default function WomenEmpowermentPage() {
             ].map((item, i) => (
               <motion.div
                 key={i}
-                className="bg-white rounded-lg p-6 shadow-md border border-pink-100 hover:shadow-lg transition-all"
+                className="bg-white rounded-lg p-6 shadow-md border border-orange-100 hover:shadow-lg transition-all"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
@@ -185,14 +185,14 @@ export default function WomenEmpowermentPage() {
           ].map((story, i) => (
             <motion.div
               key={i}
-              className="bg-white rounded-xl p-6 shadow-md border border-pink-100 hover:shadow-lg transition-all"
+              className="bg-white rounded-xl p-6 shadow-md border border-orange-100 hover:shadow-lg transition-all"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.15 }}
             >
               <div className="text-6xl mb-4 text-center">{story.image}</div>
               <h3 className="font-bold text-lg text-slate-900 mb-1">{story.name}</h3>
-              <p className="text-pink-600 font-semibold text-sm mb-3">{story.title}</p>
+              <p className="text-orange-600 font-semibold text-sm mb-3">{story.title}</p>
               <p className="text-slate-600 italic">"{story.story}"</p>
             </motion.div>
           ))}
@@ -200,15 +200,15 @@ export default function WomenEmpowermentPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-pink-600 to-rose-700 py-16 text-white">
+      <section className="bg-gradient-to-r from-orange-600 to-amber-700 py-16 text-white">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <motion.div {...fadeInUp}>
             <h2 className="text-3xl font-bold mb-4">Support Women's Empowerment</h2>
-            <p className="text-lg mb-8 text-pink-100">
+            <p className="text-lg mb-8 text-orange-100">
               Every step toward women's independence creates ripples of change across entire communities
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/donate" className="rounded-full bg-white px-8 py-3 font-semibold text-pink-600 hover:bg-pink-50 transition">
+              <a href="/donate" className="rounded-full bg-white px-8 py-3 font-semibold text-orange-600 hover:bg-orange-50 transition">
                 Donate Now
               </a>
               <a href="/get-involved/volunteer" className="rounded-full border-2 border-white px-8 py-3 font-semibold text-white hover:bg-white/10 transition">
